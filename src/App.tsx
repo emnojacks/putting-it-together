@@ -1,26 +1,21 @@
 import React from 'react';
-import logo from './logo.svg';
+// import logo from './logo.svg';
 import './App.css';
+import { Header } from './common';
+import { Checking } from './checking';
 
-function App() {
+//React.Component <Props, State>
+class App extends React.Component{
+  render() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Header
+      brand="Komodo Banking"/>
+      test
+      <Checking />
     </div>
   );
+  }
 }
 
 export default App;
